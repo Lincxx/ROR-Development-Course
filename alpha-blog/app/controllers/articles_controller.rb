@@ -8,7 +8,7 @@ class ArticlesController < ApplicationController
     end
 
     def new 
-        # @article = Article.new
+        @article = Article.new
     end
 
     def create
@@ -16,6 +16,7 @@ class ArticlesController < ApplicationController
 
         if @article.save
             #redirect_to article_path(@article)
+            flash[:notice] = "Article was created successfully"
             redirect_to @article
         else
             render 'new'
