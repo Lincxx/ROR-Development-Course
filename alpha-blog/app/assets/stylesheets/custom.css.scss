@@ -1,23 +1,42 @@
 @import 'bootstrap/dist/css/bootstrap';
 // override bootstrap
 .navbar {
+    background-color: black !important;
+    }
 
-    background-color: #FDF6EA !important;
-    
-    }
-    
-     
-    
-    .navbar-brand {
-    
-    font-size: 3rem;
-    
-    }
-    
-     
-    
-    h1 {
-    
-    color: red;
-    
-    }
+#logo {
+  float: left;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+#home-container {
+    margin-top: 25px;
+}
+
+.jumbotron {
+    background-image: asset-url('writing.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 425px;
+}
+
+/* Sticky Footer Classes */
+
+html,
+body {
+  height: 100%;
+}
+
+#page-content {
+  flex: 1 0 auto;
+  background-color: lightgrey;
+}
